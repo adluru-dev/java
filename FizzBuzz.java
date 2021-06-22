@@ -1,4 +1,6 @@
 // FizzBuzz Implementation using Streams in Java 8
+import java.util.stream.IntStream;
+
 public class FizzBuzz {
   public static void main(String[] args) {
     IntStream.rangeClosed(1,100)
