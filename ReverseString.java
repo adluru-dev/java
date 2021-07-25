@@ -34,12 +34,15 @@ public class ReverseString {
 		System.out.println("reverse 4 ->" + builder.reverse());
 
 		// 5) Using IntStream, map, mapTOObj, collect
-		String reverse = IntStream.range(0, len).map(i -> strValue.charAt(len - i - 1))
-				.mapToObj(c -> String.valueOf((char) c)).collect(Collectors.joining());
+		String reverse = IntStream.range(0, len)
+				.map(i -> strValue.charAt(len - i - 1))
+				.mapToObj(c -> String.valueOf((char) c))
+				.collect(Collectors.joining());
 		System.out.println("reverse 5 ->" + reverse);
 
 		// 6) Using IntStream, map, collect
-		reverse = IntStream.range(0, len).map(i -> strValue.charAt(len - i - 1))
+		reverse = IntStream.range(0, len)
+				.map(i -> strValue.charAt(len - i - 1))
 				.collect(StringBuilder::new, (sb, c) -> sb.append((char) c), StringBuilder::append)
 				.toString();
 		System.out.println("reverse 6 ->" + reverse);
