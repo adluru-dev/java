@@ -9,10 +9,10 @@ public class Fibonacci {
 
         // Print generateFib1 output
         long[] fib1 = generateFib1(series);
-        IntStream.range(0, series).mapToObj(i -> (fib1[i]) + " ").forEach(System.out::print);
+        IntStream.range(0, series).mapToObj(i -> fib1[i] + " ").forEach(System.out::print);
         
         // Print generateFib2 output
-        IntStream.range(0, series).mapToObj(i -> (generateFib2(i)) + " ").forEach(System.out::print);
+        IntStream.range(0, series).mapToObj(i -> generateFib2(i) + " ").forEach(System.out::print);
     }
 
     // Using IntStream and for-loop
