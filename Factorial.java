@@ -1,5 +1,11 @@
 import java.util.stream.IntStream;
 
+/**
+ * Find the Factorial of a given number
+ *
+ * Example: 3! = 3*2*1 = 6
+ *          6! = 6*5*4*3*2*1 = 720 
+ */
 public class Factorial {
     public static void main(String[] args) {
         int num = 6;
